@@ -11,8 +11,8 @@ disableWarnings: false
 disableRedstone: false
 disableMinecarts: false
 
-# If filter mode set to whitelist plugin will be enabled for specified worlds
-# If black list it will be disabled in specified worlds
+# If filter mode set to `whitelist` plugin will be enabled for specified worlds
+# If `blacklist` it will be disabled in specified worlds
 worldFilterMode: "whitelist"
 worlds:
   - "world"

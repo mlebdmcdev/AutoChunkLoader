@@ -57,11 +57,11 @@ public class EventHandlers implements Listener {
         String worldFilterMode = configManager.getWorldFilterMode();
         String worldName = world.getName();
 
-        if (worldFilterMode == "whitelist" && worlds.contains(worldName)) {
+        if (worldFilterMode.equals("whitelist") && worlds.contains(worldName)) {
             return true;
         }
 
-        if (worldFilterMode == "blacklist" && !worlds.contains(worldName)) {
+        if (worldFilterMode.equals("blacklist") && !worlds.contains(worldName)) {
             return true;
         }
 
