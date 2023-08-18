@@ -1,0 +1,20 @@
+# Configuration for AutoChunkLoader
+# https://github.com/iwalfy/AutoChunkLoader/wiki
+
+chunkLoadRadius: 2 # How many chunks should be loaded around minecart/redstone signal
+maxLoadedChunks: 1000 # How many chunks can be force loaded
+debugLog: false # Enable to find where is "lag machine"
+unloadDelay: 30000 # Delay how long force loaded chunks should be loaded (in ticks, 600 ticks = 30 seconds)
+unloadPeriod: 20 # How often to try unloading chunks (in ticks)
+warningCooldown: 30000 # Limit reach repeat cooldown (in milliseconds)
+disableWarnings: false
+disableRedstone: false
+disableMinecarts: false
+
+# If filter mode set to whitelist plugin will be enabled for specified worlds
+# If black list it will be disabled in specified worlds
+worldFilterMode: "whitelist"
+worlds:
+  - "world"
+  - "world_nether"
+  - "world_the_end"
