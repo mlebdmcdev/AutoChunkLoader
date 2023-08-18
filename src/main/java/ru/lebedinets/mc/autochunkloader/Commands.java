@@ -75,7 +75,7 @@ public class Commands implements CommandExecutor, TabCompleter {
                     case "about":
                     case "ab":
                     case "a":
-                        sender.sendMessage(ChatColor.GREEN + "AutoChunkLoader plugin by mlebd (iwalfy)\n" +
+                        sender.sendMessage(ChatColor.GREEN + "AutoChunkLoader plugin by mlebd (iwalfy) // v" + plugin.getDescription().getVersion() + "\n" +
                                 "A simple plugin that loads chunks around long railways and redstone signals\n" +
                                 ChatColor.GOLD + ChatColor.UNDERLINE + "https://github.com/iwalfy/AutoChunkLoader");
                         break;

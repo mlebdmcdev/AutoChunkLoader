@@ -2,6 +2,7 @@ package ru.lebedinets.mc.autochunkloader;
 
 import org.bukkit.*;
 import org.bukkit.block.Block;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Minecart;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -83,6 +84,15 @@ public class EventHandlers implements Listener {
 
         if (event.getVehicle() instanceof Minecart) {
             Minecart minecart = (Minecart) event.getVehicle();
+
+            // Do not load chunks when minecart has a player
+            if (minecart.getPassengers().size() > 0) {
+                Entity passenger = minecart.getPassengers().get(0);
+                if (passenger instanceof Player) {
+                    return;
+                }
+            }
+
             if (configManager.getDebugLog()) {
                 plugin.getLogger().info("Minecart signal detected at " + minecart.getLocation());
             }
