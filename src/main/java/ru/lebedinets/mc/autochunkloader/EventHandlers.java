@@ -74,7 +74,7 @@ public class EventHandlers implements Listener {
             return;
         }
 
-        if (isWorldAllowed(event.getVehicle().getWorld())) {
+        if (!isWorldAllowed(event.getVehicle().getWorld())) {
             return;
         }
 
@@ -122,7 +122,7 @@ public class EventHandlers implements Listener {
             return;
         }
 
-        if (isWorldAllowed(event.getBlock().getWorld())) {
+        if (!isWorldAllowed(event.getBlock().getWorld())) {
             return;
         }
 
