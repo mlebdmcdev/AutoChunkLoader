@@ -178,7 +178,6 @@ public class EventHandlers implements Listener {
             if (currentTime >= expirationTime) {
                 World world = chunk.getWorld();
                 world.setChunkForceLoaded(chunk.getX(), chunk.getZ(), false);
-                chunk.unload();
                 loadedChunksCount--;
                 if (configManager.getDebugLog()) {
                     plugin.getLogger().info("Unloading chunk (" + chunk.getX() + ", " + chunk.getZ() + ")...");
