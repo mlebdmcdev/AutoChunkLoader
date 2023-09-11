@@ -8,6 +8,7 @@ public final class AutoChunkLoader extends JavaPlugin {
 
     private ConfigManager configManager;
     private EventHandlers eventHandlers;
+    private final UpdateChecker updateChecker = new UpdateChecker(this.getDescription(), this.getServer());
 
     @Override
     public void onEnable() {
@@ -29,6 +30,8 @@ public final class AutoChunkLoader extends JavaPlugin {
         // bStats
         int pluginId = 19552;
         Metrics metrics = new Metrics(this, pluginId);
+
+        updateChecker.checkForUpdates();
     }
 
     @Override
