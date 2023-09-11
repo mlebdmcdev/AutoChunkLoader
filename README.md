@@ -13,3 +13,5 @@ Installation:
  - Modify `/plugins/AutoChunkLoader/config.yml` file for your needs
 
 Contant: https://t.me/mlebd
+
+![stats](https://bstats.org/signatures/bukkit/AutoChunkLoader.svg)
