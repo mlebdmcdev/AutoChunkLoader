@@ -8,8 +8,8 @@ Keep in mind with incorrect use this plugin can negatively affect server perform
 
 Installation:
  - Download jar file
- - Put this file into /plugins folder of your Spigot server
+ - Put this file into `/plugins` folder of your Spigot server
  - Restart server
- - Modify /plugins/AutoChunkLoader/config.yml file for your needs
+ - Modify `/plugins/AutoChunkLoader/config.yml` file for your needs
 
 Contant: https://t.me/mlebd
