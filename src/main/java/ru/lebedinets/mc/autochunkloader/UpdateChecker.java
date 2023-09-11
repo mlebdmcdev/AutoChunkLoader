@@ -97,7 +97,7 @@ public class UpdateChecker {
         }
 
         if (!pluginVersion.equals(lastVersion)) {
-            sendLog(ChatColor.AQUA + "New update available: v" + lastVersion + " / Current: " + pluginVersion + "\n" + "You can download it here: " + downloadUrl);
+            sendLog(ChatColor.AQUA + "New update available: v" + lastVersion + " / Current: v" + pluginVersion + "\n" + "You can download it here: " + downloadUrl);
         }
     }
 }
