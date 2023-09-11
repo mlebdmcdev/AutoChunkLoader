@@ -1,4 +1,4 @@
-# AutoChunkLoader
+# ![logo](https://i.imgur.com/0UFlvHt.png) AutoChunkLoader
 A simple plugin that loads chunks around long railways and redstone signals
 
 It can be used for transporting resources in chest minecarts through whole world or making large redstone circuits.
