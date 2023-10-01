@@ -14,4 +14,4 @@ Installation:
 
 Contant: https://t.me/mlebd
 
-![stats](https://bstats.org/signatures/bukkit/AutoChunkLoader.svg)
+[![stats](https://bstats.org/signatures/bukkit/AutoChunkLoader.svg)](https://bstats.org/plugin/bukkit/AutoChunkLoader/19552)
